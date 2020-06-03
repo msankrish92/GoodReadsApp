@@ -1,8 +1,8 @@
 # GoodReadsApp
-Using this app can search the name of the book based on various inputs.
+Using this app, can search the name of the book based on various inputs.
 
-## Tech/framework used
-##### Build with
+## Tech/framework Used
+##### Built with
   * Maven
   * TestNG
   * Extent Reports
@@ -10,7 +10,7 @@ Using this app can search the name of the book based on various inputs.
 ## API Reference
 https://www.goodreads.com/api
  
-## code Example
+## code Sample
 ```java
 Response response = getWithParam("q", searchQuery, "key", "6lrYcIJMFj37UMKUHz4A", "search/index.xml");
 verifyResponseCode(response, 200);
@@ -24,9 +24,9 @@ verifyActualAndExpectedValue(bookPrizerWinnerBook, expectedBookName);
 ## Tests
 1. For testing we need to load the test data into the below excel file based on the requirement.<br>
 ![alt text](https://github.com/msankrish92/GoodReadsApp/blob/master/readmeImages/Capture.PNG?raw=true) <br>
-2. Then we need to open the testng.xml and run the test as TestNg suite there<br>
+2. Then we need to open the testng.xml and run the test as TestNg suite there.<br>
 ![alt text](https://github.com/msankrish92/GoodReadsApp/blob/master/readmeImages/Capture2.PNG?raw=true) <br>
-3. After the job completes you can see report in console like <br>
+3. After the job completes you can see report in the console like shown below.<br>
 ![alt text](https://github.com/msankrish92/GoodReadsApp/blob/master/readmeImages/Capture3.PNG?raw=true)
 4. Html report is also generated in under reports folder. <Br>
 ![alt text](https://github.com/msankrish92/GoodReadsApp/blob/master/readmeImages/Capture4.PNG?raw=true)
