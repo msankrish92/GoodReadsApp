@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.goodReads.Test.TC001_GetLatestBookOfAuthor" hash-for-method="getLatestBookOfAuthor(J.k.rowling, Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay)">getLatestBookOfAuthor(J.k.rowling, Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.goodReads.Test.TC002_GetBookNameBasedOnDescription" hash-for-method="getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure)">getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.goodReads.test.GetBookNameBasedOnDescription" hash-for-method="getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure, https://www.goodreads.com/book/show/865.The...)">getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure, https://www.goodreads.com/book/show/865.The...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.goodReads.test.GetLatestBookOfAuthor" hash-for-method="getLatestBookOfAuthor(J.k.rowling, Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay)">getLatestBookOfAuthor(J.k.rowling, Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.goodReads.test.GetBookNameOfBookerPrizeWinner" hash-for-method="getNameOfBookePrizeWinner(The Test, The Testaments)">getNameOfBookePrizeWinner(The Test, The Testaments)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -131,10 +127,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">org.goodReads.Test.TC001_GetLatestBookOfAuthor</span>
+              <img src="passed.png"/>
+              <span class="class-name">org.goodReads.test.GetBookNameOfBookerPrizeWinner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getNameOfBookePrizeWinner(The Test, The Testaments)">
+                  </a> <!-- getNameOfBookePrizeWinner(The Test, The Testaments) -->
+                  <span class="method-name">getNameOfBookePrizeWinner</span>
+                  <span class="parameters">(The Test, The Testaments)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.goodReads.test.GetLatestBookOfAuthor</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -143,29 +155,22 @@
                   </a> <!-- getLatestBookOfAuthor(J.k.rowling, Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay) -->
                   <span class="method-name">getLatestBookOfAuthor</span>
                   <span class="parameters">(J.k.rowling, Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay)</span>
-                  <div class="stack-trace">java.lang.RuntimeException
-	at org.goodReads.utils.HTMLReporter.reportRequest(HTMLReporter.java:68)
-	at org.goodReads.base.RestAssuredBase.verifyActualAndExpectedValue(RestAssuredBase.java:125)
-	at org.goodReads.Test.TC001_GetLatestBookOfAuthor.getLatestBookOfAuthor(TC001_GetLatestBookOfAuthor.java:54)
-	at java.util.ArrayList.forEach(ArrayList.java:1257)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.goodReads.Test.TC002_GetBookNameBasedOnDescription</span>
+              <span class="class-name">org.goodReads.test.GetBookNameBasedOnDescription</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure)">
-                  </a> <!-- getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure) -->
+                  <a name="getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure, https://www.goodreads.com/book/show/865.The...)">
+                  </a> <!-- getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure, https://www.goodreads.com/book/show/865.The...) -->
                   <span class="method-name">getBookNameBasedOnDescription</span>
-                  <span class="parameters">(Paulo Coelho, to travel in search of a worldly treasure)</span>
+                  <span class="parameters">(Paulo Coelho, to travel in search of a worldly treasure, https://www.goodreads.com/book/show/865.The_Alchemist)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -182,8 +187,9 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.goodReads.Test.TC001_GetLatestBookOfAuthor&quot;/&gt;
-      &lt;class name=&quot;org.goodReads.Test.TC002_GetBookNameBasedOnDescription&quot;/&gt;
+      &lt;class name=&quot;org.goodReads.test.GetLatestBookOfAuthor&quot;/&gt;
+      &lt;class name=&quot;org.goodReads.test.GetBookNameBasedOnDescription&quot;/&gt;
+      &lt;class name=&quot;org.goodReads.test.GetBookNameOfBookerPrizeWinner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -197,7 +203,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,20 +229,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getBookNameBasedOnDescription')
-data.setCell(0, 2, 'org.goodReads.Test.TC002_GetBookNameBasedOnDescription')
-data.setCell(0, 3, 34101);
+data.setCell(0, 1, 'getNameOfBookePrizeWinner')
+data.setCell(0, 2, 'org.goodReads.test.GetBookNameOfBookerPrizeWinner')
+data.setCell(0, 3, 35206);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getLatestBookOfAuthor')
-data.setCell(1, 2, 'org.goodReads.Test.TC001_GetLatestBookOfAuthor')
-data.setCell(1, 3, 3113);
+data.setCell(1, 1, 'getBookNameBasedOnDescription')
+data.setCell(1, 2, 'org.goodReads.test.GetBookNameBasedOnDescription')
+data.setCell(1, 3, 34453);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getLatestBookOfAuthor')
+data.setCell(2, 2, 'org.goodReads.test.GetLatestBookOfAuthor')
+data.setCell(2, 3, 3031);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -251,11 +261,20 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">org.goodReads.Test.TC002_GetBookNameBasedOnDescription</span>
+              <span class="ignored-class-name">org.goodReads.test.GetBookNameOfBookerPrizeWinner</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">org.goodReads.test.GetBookNameBasedOnDescription</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">afterSuite</span>
                 <br/>
@@ -271,60 +290,80 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.goodReads.Test.TC001_GetLatestBookOfAuthor</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.goodReads.test.GetLatestBookOfAuthor</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.goodReads.test.GetBookNameBasedOnDescription</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">518 ms</span>
+                <span class="method-start">396 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">org.goodReads.Test.TC002_GetBookNameBasedOnDescription</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.goodReads.test.GetBookNameOfBookerPrizeWinner</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">519 ms</span>
+                <span class="method-start">396 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">org.goodReads.Test.TC001_GetLatestBookOfAuthor</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.goodReads.test.GetLatestBookOfAuthor</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setValues</span>
+                <span class="method-start">397 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">526 ms</span>
+                <span class="method-start">405 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">908 ms</span>
+                <span class="method-start">762 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">getLatestBookOfAuthor(J.k.rowling, Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay)</span>
-                <span class="method-start">911 ms</span>
+                <span class="method-start">765 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">org.goodReads.Test.TC002_GetBookNameBasedOnDescription</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.goodReads.test.GetBookNameBasedOnDescription</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">4031 ms</span>
+                <span class="method-start">3800 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">4045 ms</span>
+                <span class="method-start">3821 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure)</span>
-                <span class="method-start">4045 ms</span>
+                <span class="method-name">getBookNameBasedOnDescription(Paulo Coelho, to travel in search of a worldly treasure, https://www.goodreads.com/book/show/865.The...)</span>
+                <span class="method-start">3822 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">org.goodReads.Test.TC001_GetLatestBookOfAuthor</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.goodReads.test.GetBookNameOfBookerPrizeWinner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">38276 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">38285 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getNameOfBookePrizeWinner(The Test, The Testaments)</span>
+                <span class="method-start">38285 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.goodReads.test.GetLatestBookOfAuthor</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">38165 ms</span>
+                <span class="method-start">73504 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

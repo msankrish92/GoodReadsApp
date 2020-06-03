@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="Test" >
     <classes>
-      <class name="org.goodReads.Test.TC001_GetLatestBookOfAuthor"/>
-      <class name="org.goodReads.Test.TC002_GetBookNameBasedOnDescription"/>
+     <class name="org.goodReads.test.GetLatestBookOfAuthor"/>
+     <class name="org.goodReads.test.GetBookNameBasedOnDescription"/>
+     <class name="org.goodReads.test.GetBookNameOfBookerPrizeWinner"/> 
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

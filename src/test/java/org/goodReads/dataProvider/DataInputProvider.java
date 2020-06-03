@@ -1,4 +1,4 @@
-package org.goodReads.utils;
+package org.goodReads.dataProvider;
 
 import java.io.FileInputStream;
 

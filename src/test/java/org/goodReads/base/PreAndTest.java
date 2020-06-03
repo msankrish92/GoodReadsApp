@@ -6,8 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.goodReads.utils.DataInputProvider;
-import org.goodReads.utils.HTMLReporter;
+import org.goodReads.dataProvider.DataInputProvider;
+import org.goodReads.reporter.HTMLReporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;

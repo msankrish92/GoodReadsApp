@@ -3,17 +3,14 @@ package org.goodReads.base;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
-import org.testng.Assert;
-
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -25,12 +22,13 @@ public class RestAssuredBase extends PreAndTest {
 
 	}
 
-	public static Response getWithParam(String key, String value, String resourse) {
-		return setLogs().params(key, value).when().get(resourse);
+	public static Response getWithParam(String apiKey, String value, String resourse) {
+		return setLogs().params(apiKey, value).when().get(resourse);
 	}
 
-	public static Response getWithParam(String key, String value, String key1, String value1, String resourse) {
-		return setLogs().params(key, value).and().params(key1, value1).when().get(resourse);
+	public static Response getWithParam(String query, String searchKeyword, String apiKey, String value,
+			String resourse) {
+		return setLogs().params(query, searchKeyword).and().params(apiKey, value).when().get(resourse);
 	}
 
 	public static void verifyResponseCode(Response response, int code) {
@@ -51,30 +49,27 @@ public class RestAssuredBase extends PreAndTest {
 
 	}
 
-	public static void createModifiableListWithZeroBeforeSingleCharacters(List<String> inputList,
-			List<String> outputList) {
+	public static List<String> createModifiableListWithZeroBeforeSingleCharacters(List<String> inputList,
+			List<String> modifiableoutputList) {
 		for (int i = 0; i < inputList.size(); i++) {
 
 			if (inputList.get(i).length() == 1 && !inputList.get(i).equals("null")) {
-				outputList.add("0" + inputList.get(i));
+				modifiableoutputList.add("0" + inputList.get(i));
 			} else {
-				outputList.add(inputList.get(i));
+				modifiableoutputList.add(inputList.get(i));
 			}
 		}
+		return modifiableoutputList;
 	}
 
-	public static void createMapWithBookAndReleaseDate(List<String> bookName, List<String> year, List<String> month,
-			List<String> date, Map<String, String> ouputMap) {
+	public static Map<String, String> createMapWithBookAndReleaseDate(List<String> bookName, List<String> date,
+			Map<String, String> bookNameAndReleaseDate) {
 		for (int i = 0; i < bookName.size(); i++) {
-			if (!year.get(i).equals("null")) {
-				if (!month.get(i).equals("null")) {
-					if (!date.get(i).equals("null")) {
-						ouputMap.put(bookName.get(i), year.get(i) + "-" + month.get(i) + "-" + date.get(i));
-					}
-				}
+			if (!date.get(i).contains("null")) {
+				bookNameAndReleaseDate.put(bookName.get(i), date.get(i));
 			}
 		}
-
+		return bookNameAndReleaseDate;
 	}
 
 	public static String getRecentDateFromMap(Map<String, String> BookNameReleaseDate, List<Date> dates)
@@ -107,8 +102,8 @@ public class RestAssuredBase extends PreAndTest {
 					matchedKey = a.getKey();
 					break;
 				}
-			}else if(basedOn.equals("desc")) {
-				if(a.getValue().contains("to travel in search of a worldly treasure")) {
+			} else if (basedOn.equals("desc")) {
+				if (a.getValue().contains("to travel in search of a worldly treasure")) {
 					matchedKey = a.getKey();
 				}
 			}
@@ -119,11 +114,9 @@ public class RestAssuredBase extends PreAndTest {
 	public void verifyActualAndExpectedValue(String actual, String expected) {
 
 		if (actual.equals(expected)) {
-			reportRequest("The actual \"" + actual + "\" matches with the expected \"" + expected + "\"",
-					"PASS");
+			reportRequest("The actual \"" + actual + "\" matches with the expected \"" + expected + "\"", "PASS");
 		} else {
-			reportRequest(
-					"The actual \"" + actual + "\" doesn't matches with the expected \"" + expected + "\"",
+			reportRequest("The actual \"" + actual + "\" doesn't matches with the expected \"" + expected + "\"",
 					"FAIL");
 		}
 	}
@@ -139,11 +132,30 @@ public class RestAssuredBase extends PreAndTest {
 		}
 		return outputMap;
 	}
-	
+
+	public String getBookerPrizerWinnerBook(List<String> idList) {
+
+		String bookerPrizeBooks = new String();
+		for (int i = 0; i < idList.size(); i++) {
+
+			Response response = getWithParam("key", "6lrYcIJMFj37UMKUHz4A", "book/show/" + idList.get(i) + ".xml");
+			XmlPath xmlResponse = response.xmlPath();
+			List<String> shelfs = xmlResponse.getList("GoodreadsResponse.book.popular_shelves.shelf.@name");
+			String bookName = xmlResponse.get("GoodreadsResponse.book.title").toString();
+			for (int j = 0; j < shelfs.size(); j++) {
+
+				if (shelfs.get(j).equals("booker-prize")) {
+					bookerPrizeBooks = bookName;
+
+				}
+			}
+		}
+		return bookerPrizeBooks;
+	}
+
 	public void checkForNullValue(String value) {
-		if(value.equals("null")) {
-		reportRequest("The value is null",
-				"FAIL");
+		if (value.equals("null")) {
+			reportRequest("The value is null", "FAIL");
 		}
 	}
 

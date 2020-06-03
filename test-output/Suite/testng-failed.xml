@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="org.goodReads.Test.TC001_GetLatestBookOfAuthor">
+      <class name="org.goodReads.test.GetLatestBookOfAuthor">
         <methods>
           <include name="afterSuite"/>
           <include name="beforeMethod"/>
           <include name="beforeClass"/>
+          <include name="getLatestBookOfAuthor" invocation-numbers="0"/>
           <include name="beforeSuite"/>
           <include name="setValues"/>
-          <include name="getLatestBookOfAuthor" invocation-numbers="0"/>
         </methods>
-      </class> <!-- org.goodReads.Test.TC001_GetLatestBookOfAuthor -->
+      </class> <!-- org.goodReads.test.GetLatestBookOfAuthor -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
