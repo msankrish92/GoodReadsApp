@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Jun 3, 2020 03:04:13 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Jun 3, 2020 07:57:15 PM</span>
 				</a>
 			</li>
 			<li>
@@ -74,6 +74,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -134,10 +135,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='50%'><span class='strong'>2</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='50%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -149,10 +150,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>2</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>8</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -167,26 +168,197 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Get latest book of the Author</span>
-						<span class='test-time'>Jun 3, 2020 03:04:13 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Jun 3, 2020 07:52:23 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Jun 3, 2020 03:04:13 PM</span>
-	<span class='label end-time'>Jun 3, 2020 03:04:16 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+264ms</span>
+	<span class='label start-time'>Jun 3, 2020 07:52:23 PM</span>
+	<span class='label end-time'>Jun 3, 2020 07:52:26 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+0ms</span>
 </div>
 	<div class='test-desc'>Get latest book of the Author and verify it </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
-				<li class='node level-1 leaf pass' status='pass' test-id='2'>
+				<li class='node level-1 leaf fail' status='fail' test-id='2'>
 					<div class='collapsible-header'>
 						<h5 class='node-name'>Steps latest book of the Author and verify it</h5>
-						<span class="node-time label grey lighten-1 white-text">Jun 3, 2020 03:04:16 PM</span>
-						<span class='node-duration label grey lighten-1 white-text'>0h 0m 2s+897ms</span>
+						<span class="node-time label grey lighten-1 white-text">Jun 3, 2020 07:57:15 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 4m 49s+276ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:52:25 PM</td>
+													<td class='step-details'>The status code 200 matches the expected code</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:52:26 PM</td>
+													<td class='step-details'>The recently released book name is Fantastic Beasts and Where to Find Them: The Original Screenplay (Fantastic Beasts: The Original Screenplay, #1)</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>7:52:26 PM</td>
+													<td class='step-details'>The actual "Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay" doesn't matches with the expected "Fantastic Beasts and Where to Find Them: The Original Screenplay (Fantastic Beasts: The Original Screenplay, #1)"</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Get Book name based on description</span>
+						<span class='test-time'>Jun 3, 2020 07:52:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 3, 2020 07:52:26 PM</span>
+	<span class='label end-time'>Jun 3, 2020 07:53:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+0ms</span>
+</div>
+	<div class='test-desc'>Get Book name based on description and verify it </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Steps to Get Book name based on description and verify it</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 3, 2020 07:57:15 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 4m 15s+282ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:52:28 PM</td>
+													<td class='step-details'>The status code 200 matches the expected code</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:53:00 PM</td>
+													<td class='step-details'>The actual "https://www.goodreads.com/book/show/865.The_Alchemist" matches with the expected "https://www.goodreads.com/book/show/865.The_Alchemist"</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>Get latest book of the Author</span>
+						<span class='test-time'>Jun 3, 2020 07:57:15 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 3, 2020 07:57:15 PM</span>
+	<span class='label end-time'>Jun 3, 2020 07:57:18 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+497ms</span>
+</div>
+	<div class='test-desc'>Get latest book of the Author and verify it </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf fail' status='fail' test-id='6'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Steps latest book of the Author and verify it</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 3, 2020 07:57:18 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 3s+116ms</span>
+						<span class='test-status right fail'>fail</span>
+								<span class='category label white-text'>REST</span>
+								<span class='author label white-text'>Sanjay</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:18 PM</td>
+													<td class='step-details'>The status code 200 matches the expected code</td>
+												</tr>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>7:57:18 PM</td>
+													<td class='step-details'>The recently released book name is  Fantastic Beasts and Where to Find Them: The Original Screenplay (Fantastic Beasts: The Original Screenplay, #1)</td>
+												</tr>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>7:57:18 PM</td>
+													<td class='step-details'>The actual "Fantastic Beasts and Where to Find Them: The Original Screenplay (Fantastic Beasts: The Original Screenplay, #1)" doesn't matches with the expected "Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay"</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+	</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Get Book name based on description</span>
+						<span class='test-time'>Jun 3, 2020 07:57:18 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jun 3, 2020 07:57:18 PM</span>
+	<span class='label end-time'>Jun 3, 2020 07:57:52 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 34s+115ms</span>
+</div>
+	<div class='test-desc'>Get Book name based on description and verify it </div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1 leaf pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<h5 class='node-name'>Steps to Get Book name based on description and verify it</h5>
+						<span class="node-time label grey lighten-1 white-text">Jun 3, 2020 07:57:52 PM</span>
+						<span class='node-duration label grey lighten-1 white-text'>0h 0m 34s+101ms</span>
 						<span class='test-status right pass'>pass</span>
 								<span class='category label white-text'>REST</span>
 								<span class='author label white-text'>Sanjay</span>
@@ -204,13 +376,13 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:04:16 PM</td>
+													<td class='timestamp'>7:57:20 PM</td>
 													<td class='step-details'>The status code 200 matches the expected code</td>
 												</tr>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>3:04:16 PM</td>
-													<td class='step-details'>The actual book "Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay" matches with the expected "Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay" book</td>
+													<td class='timestamp'>7:57:52 PM</td>
+													<td class='step-details'>The actual "https://www.goodreads.com/book/show/865.The_Alchemist" matches with the expected "https://www.goodreads.com/book/show/865.The_Alchemist"</td>
 												</tr>
 										</tbody>
 									</table>
@@ -275,12 +447,13 @@
 						<span class='category-name'>REST</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
 							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -295,8 +468,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jun 3, 2020 03:04:13 PM</td>
-										<td class='linked' test-id='2'>Get latest book of the Author.Steps latest book of the Author and verify it</td>
+										<td>Jun 3, 2020 07:57:15 PM</td>
+										<td class='linked' test-id='6'>Get latest book of the Author.Steps latest book of the Author and verify it</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Jun 3, 2020 07:57:18 PM</td>
+										<td class='linked' test-id='8'>Get Book name based on description.Steps to Get Book name based on description and verify it</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -345,12 +523,13 @@
                                 <span class='author-name'>Sanjay</span>
                                 <span class='author-status right'>
                                         <span class='label pass'>1</span>
+                                        <span class='label fail'>1</span>
 						        </span>
                             </div>
                             <div class='author-content hide'>
                                 <div class='author-status-counts'>
                                     <span class='label green accent-4 white-text'>Passed: 1</span>
-                                    
+                                    <span class='label red lighten-1 white-text'>Failed: 1</span>
                                     
                                 </div>
 
@@ -365,8 +544,13 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Jun 3, 2020 03:04:13 PM</td>
-                                                <td class='linked' test-id='2'>Get latest book of the Author.Steps latest book of the Author and verify it</td>
+                                                <td>Jun 3, 2020 07:57:15 PM</td>
+                                                <td class='linked' test-id='6'>Get latest book of the Author.Steps latest book of the Author and verify it</td>
+                                                <td><span class='test-status fail'>fail</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jun 3, 2020 07:57:18 PM</td>
+                                                <td class='linked' test-id='8'>Get Book name based on description.Steps to Get Book name based on description and verify it</td>
                                                 <td><span class='test-status pass'>pass</span></td>
                                             </tr>
                                         </tbody>
@@ -394,31 +578,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>4</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>2</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jun 3, 2020 03:04:13 PM</div>
+					<div class='panel-lead'>Jun 3, 2020 07:57:15 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jun 3, 2020 03:04:16 PM</div>
+			 		<div class='panel-lead'>Jun 3, 2020 07:57:52 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 3s+340ms</div>
+					<div class='panel-lead'>0h 0m 37s+801ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -436,10 +620,10 @@
 						<tr>
 							<td>REST</td>
 							<td>1</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									50%
 							</td>
 						</tr>
 					</table>
@@ -455,22 +639,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 2,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 2,
 				
-				passChild: 2,
-				failChild: 0,
+				passChild: 8,
+				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 2,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

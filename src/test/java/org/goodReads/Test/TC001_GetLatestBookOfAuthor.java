@@ -47,9 +47,11 @@ public class TC001_GetLatestBookOfAuthor extends RestAssuredBase {
 		createMapWithBookAndReleaseDate(bookName, publishedYear, ModifiablePublishedMonth, ModifiablePublishedDate,
 				BookNameReleaseDate);
 		String recentDate = getRecentDateFromMap(BookNameReleaseDate, dates);
-		
-		String RecentlyReleasedBookName = getRecentlyReleasedBookName(BookNameReleaseDate, recentDate);
-		verifyActualAndExpectedValue(recentlyReleasedBook, RecentlyReleasedBookName);
+		String basedOn = "date";
+		String RecentlyReleasedBookName = searchMap(BookNameReleaseDate, recentDate, basedOn);
+		reportRequest("The recently released book name is  " + RecentlyReleasedBookName,
+				"PASS");
+		verifyActualAndExpectedValue(RecentlyReleasedBookName, recentlyReleasedBook);
 
 	}
 
