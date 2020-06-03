@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
+
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 
@@ -71,16 +71,17 @@ public class Functions {
 				ModifiablePublishedDay.add(publishedDay.get(i));
 			}
 		}
+		System.out.println(ModifiablePublishedDay);
 		
 		Map<String, String> books = new HashMap<String,String>();
 		
 		for (int i = 0; i < bookName.size(); i++) {
-//			System.out.println(publishedYear.get(i));
-//			System.out.println(ModifiablePublishedMonth.get(i));
-//			System.out.println(ModifiablePublishedDay.get(i));
+			System.out.println(publishedYear.get(i));
+			System.out.println(ModifiablePublishedMonth.get(i));
+			System.out.println(ModifiablePublishedDay.get(i));
 //			if(publishedYear.get(i).equals("null")&&publishedMonth.get(i).equals("null")&&publishedDay.get(i).equals("null"))
 //			books.put(bookName.get(i), publishedYear.get(i) + "-" + publishedMonth.get(i) + "-" + publishedDay.get(i));
-//		}
+		
 			if(!publishedYear.get(i).equals("null"))
 			{
 				if(!ModifiablePublishedMonth.get(i).equals("null")) {
@@ -112,7 +113,7 @@ public class Functions {
 		
 		Date recentReleasedBookDate = Collections.max(dates);
 		
-		String dateStr = recentReleasedBookDate + "";
+		String dateStr = recentReleasedBookDate.toString();
 		DateFormat formatter = new SimpleDateFormat("E MMM dd HH:mm:ss Z yyyy");
 		Date date1 = (Date)formatter.parse(dateStr);
 		System.out.println(date1);   

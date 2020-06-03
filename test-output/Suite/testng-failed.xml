@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="org.goodReads.Test.TC001_GetLatestBookOfAuthor">
+        <methods>
+          <include name="afterSuite"/>
+          <include name="beforeMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeSuite"/>
+          <include name="setValues"/>
+          <include name="getLatestBookOfAuthor" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- org.goodReads.Test.TC001_GetLatestBookOfAuthor -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

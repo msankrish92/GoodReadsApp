@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3280" started-at="2020-06-03T15:04:13 IST" finished-at="2020-06-03T15:04:16 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="3280" started-at="2020-06-03T15:04:13 IST" finished-at="2020-06-03T15:04:16 IST">
+      <class name="org.goodReads.Test.TC001_GetLatestBookOfAuthor">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:org.goodReads.Test.TC001_GetLatestBookOfAuthor@491cc5c9]" name="beforeSuite" is-config="true" duration-ms="395" started-at="2020-06-03T15:04:13 IST" finished-at="2020-06-03T15:04:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setValues()[pri:0, instance:org.goodReads.Test.TC001_GetLatestBookOfAuthor@491cc5c9]" name="setValues" is-config="true" duration-ms="1" started-at="2020-06-03T15:04:13 IST" finished-at="2020-06-03T15:04:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.goodReads.Test.TC001_GetLatestBookOfAuthor@491cc5c9]" name="beforeClass" is-config="true" duration-ms="2" started-at="2020-06-03T15:04:13 IST" finished-at="2020-06-03T15:04:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.goodReads.Test.TC001_GetLatestBookOfAuthor@491cc5c9]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2020-06-03T15:04:13 IST" finished-at="2020-06-03T15:04:13 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getLatestBookOfAuthor(java.lang.String, java.lang.String)[pri:0, instance:org.goodReads.Test.TC001_GetLatestBookOfAuthor@491cc5c9]" name="getLatestBookOfAuthor" duration-ms="2895" started-at="2020-06-03T15:04:13 IST" data-provider="fetchData" finished-at="2020-06-03T15:04:16 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[J.k.rowling]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Fantastic Beasts - The Crimes of Grindelwald: The Original Screenplay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLatestBookOfAuthor -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.goodReads.Test.TC001_GetLatestBookOfAuthor@491cc5c9]" name="afterSuite" is-config="true" duration-ms="178" started-at="2020-06-03T15:04:16 IST" finished-at="2020-06-03T15:04:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- org.goodReads.Test.TC001_GetLatestBookOfAuthor -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
