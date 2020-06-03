@@ -15,7 +15,7 @@ public class DataInputProvider{
 		Object[][] data = null ;
 
 		try {
-			String text = "./data/"+dataSheetName+".xlsx";
+			
 			
 			FileInputStream fis = new FileInputStream("./data/"+dataSheetName+".xlsx");
 			XSSFWorkbook workbook = new XSSFWorkbook(fis);
