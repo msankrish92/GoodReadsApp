@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="4" total="7" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="73096" started-at="2020-06-04T02:05:35 IST" finished-at="2020-06-04T02:06:49 IST">
+  <suite name="Suite" duration-ms="73823" started-at="2020-06-04T03:59:05 IST" finished-at="2020-06-04T04:00:19 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="73096" started-at="2020-06-04T02:05:35 IST" finished-at="2020-06-04T02:06:49 IST">
+    <test name="Test" duration-ms="73823" started-at="2020-06-04T03:59:05 IST" finished-at="2020-06-04T04:00:19 IST">
       <class name="org.goodReads.test.GetBookNameOfBookerPrizeWinner">
-        <test-method status="PASS" signature="setValues()[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@69b0fd6f]" name="setValues" is-config="true" duration-ms="1" started-at="2020-06-04T02:05:35 IST" finished-at="2020-06-04T02:05:35 IST">
+        <test-method status="PASS" signature="setValues()[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@6a1aab78]" name="setValues" is-config="true" duration-ms="0" started-at="2020-06-04T03:59:05 IST" finished-at="2020-06-04T03:59:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@69b0fd6f]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-06-04T02:06:13 IST" finished-at="2020-06-04T02:06:13 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@6a1aab78]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-06-04T03:59:44 IST" finished-at="2020-06-04T03:59:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@69b0fd6f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-04T02:06:13 IST" finished-at="2020-06-04T02:06:13 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@6a1aab78]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-06-04T03:59:44 IST" finished-at="2020-06-04T03:59:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getNameOfBookePrizeWinner(java.lang.String, java.lang.String)[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@69b0fd6f]" name="getNameOfBookePrizeWinner" duration-ms="35206" started-at="2020-06-04T02:06:13 IST" data-provider="fetchData" finished-at="2020-06-04T02:06:49 IST">
+        <test-method status="PASS" signature="getNameOfBookePrizeWinner(java.lang.String, java.lang.String)[pri:0, instance:org.goodReads.test.GetBookNameOfBookerPrizeWinner@6a1aab78]" name="getNameOfBookePrizeWinner" duration-ms="35201" started-at="2020-06-04T03:59:44 IST" data-provider="fetchData" finished-at="2020-06-04T04:00:19 IST">
           <params>
             <param index="0">
               <value>
@@ -37,19 +37,15 @@
         </test-method> <!-- getNameOfBookePrizeWinner -->
       </class> <!-- org.goodReads.test.GetBookNameOfBookerPrizeWinner -->
       <class name="org.goodReads.test.GetBookNameBasedOnDescription">
-        <test-method status="PASS" signature="setValues()[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@462d5aee]" name="setValues" is-config="true" duration-ms="0" started-at="2020-06-04T02:05:35 IST" finished-at="2020-06-04T02:05:35 IST">
+        <test-method status="PASS" signature="setValues()[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@74ad1f1f]" name="setValues" is-config="true" duration-ms="0" started-at="2020-06-04T03:59:05 IST" finished-at="2020-06-04T03:59:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@462d5aee]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-06-04T02:05:39 IST" finished-at="2020-06-04T02:05:39 IST">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@74ad1f1f]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-06-04T03:59:09 IST" finished-at="2020-06-04T03:59:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@462d5aee]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-04T02:05:39 IST" finished-at="2020-06-04T02:05:39 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getBookNameBasedOnDescription(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@462d5aee]" name="getBookNameBasedOnDescription" duration-ms="34453" started-at="2020-06-04T02:05:39 IST" data-provider="fetchData" finished-at="2020-06-04T02:06:13 IST">
+        <test-method status="PASS" signature="getBookNameBasedOnDescription(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@74ad1f1f]" name="getBookNameBasedOnDescription" duration-ms="35040" started-at="2020-06-04T03:59:09 IST" data-provider="fetchData" finished-at="2020-06-04T03:59:44 IST">
           <params>
             <param index="0">
               <value>
@@ -70,25 +66,29 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getBookNameBasedOnDescription -->
-      </class> <!-- org.goodReads.test.GetBookNameBasedOnDescription -->
-      <class name="org.goodReads.test.GetLatestBookOfAuthor">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@6a1aab78]" name="beforeSuite" is-config="true" duration-ms="394" started-at="2020-06-04T02:05:35 IST" finished-at="2020-06-04T02:05:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setValues()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@6a1aab78]" name="setValues" is-config="true" duration-ms="0" started-at="2020-06-04T02:05:35 IST" finished-at="2020-06-04T02:05:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setValues -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@6a1aab78]" name="beforeClass" is-config="true" duration-ms="2" started-at="2020-06-04T02:05:35 IST" finished-at="2020-06-04T02:05:35 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@6a1aab78]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2020-06-04T02:05:36 IST" finished-at="2020-06-04T02:05:36 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.goodReads.test.GetBookNameBasedOnDescription@74ad1f1f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-06-04T03:59:09 IST" finished-at="2020-06-04T03:59:09 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getLatestBookOfAuthor(java.lang.String, java.lang.String)[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@6a1aab78]" name="getLatestBookOfAuthor" duration-ms="3031" started-at="2020-06-04T02:05:36 IST" data-provider="fetchData" finished-at="2020-06-04T02:05:39 IST">
+      </class> <!-- org.goodReads.test.GetBookNameBasedOnDescription -->
+      <class name="org.goodReads.test.GetLatestBookOfAuthor">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@491cc5c9]" name="beforeSuite" is-config="true" duration-ms="404" started-at="2020-06-04T03:59:05 IST" finished-at="2020-06-04T03:59:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setValues()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@491cc5c9]" name="setValues" is-config="true" duration-ms="0" started-at="2020-06-04T03:59:05 IST" finished-at="2020-06-04T03:59:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setValues -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@491cc5c9]" name="beforeClass" is-config="true" duration-ms="1" started-at="2020-06-04T03:59:05 IST" finished-at="2020-06-04T03:59:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@491cc5c9]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2020-06-04T03:59:06 IST" finished-at="2020-06-04T03:59:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getLatestBookOfAuthor(java.lang.String, java.lang.String)[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@491cc5c9]" name="getLatestBookOfAuthor" duration-ms="3124" started-at="2020-06-04T03:59:06 IST" data-provider="fetchData" finished-at="2020-06-04T03:59:09 IST">
           <params>
             <param index="0">
               <value>
@@ -104,7 +104,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLatestBookOfAuthor -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@6a1aab78]" name="afterSuite" is-config="true" duration-ms="199" started-at="2020-06-04T02:06:49 IST" finished-at="2020-06-04T02:06:49 IST">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:org.goodReads.test.GetLatestBookOfAuthor@491cc5c9]" name="afterSuite" is-config="true" duration-ms="181" started-at="2020-06-04T04:00:19 IST" finished-at="2020-06-04T04:00:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

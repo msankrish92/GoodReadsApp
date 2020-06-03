@@ -39,7 +39,7 @@ public class HTMLReporter {
 
 		html = new ExtentHtmlReporter("./reports/result.html");
 		html.setAppendExisting(true);
-//		html.loadXMLConfig("./src/test/resources/extent-config.xml");
+
 		extent = new ExtentReports();
 		extent.attachReporter(html);
 	}
